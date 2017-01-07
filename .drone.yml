@@ -1,0 +1,7 @@
+pipeline:
+   build:
+     image: qnib/u-docker
+     commands:
+      - docker build -t cp2017/ipfs .
+     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
