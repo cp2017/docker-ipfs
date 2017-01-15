@@ -2,3 +2,7 @@ pipeline:
   docker:
     image: plugins/docker
     repo: cp2017/ipfs
+  slack:
+    image: plugins/slack
+    channel: drone
+    username: drone
