@@ -2,6 +2,9 @@ pipeline:
   docker:
     image: plugins/docker
     repo: cp2017/ipfs
+    tags:
+     - latest
+     - drone-$DRONE_BUILD_NUMBER
   slack:
     image: plugins/slack
     channel: drone
